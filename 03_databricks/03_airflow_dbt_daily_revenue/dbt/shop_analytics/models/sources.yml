@@ -1,0 +1,10 @@
+version: 2
+sources:
+  - name: staged_shop
+    schema: staging
+    tables:
+      - name: orders
+  - name: raw_shop
+    schema: public
+    tables:
+      - name: order_items

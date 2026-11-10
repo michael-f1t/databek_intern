@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: daily_revenue
+    description: Daily revenue from staged orders and order items.
+    columns:
+      - name: order_date
+        tests:
+          - not_null
+          - unique
+      - name: daily_revenue
+        tests:
+          - not_null
